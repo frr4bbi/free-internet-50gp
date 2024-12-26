@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নতুন বছরের অফার</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="landing-page">
+        <div class="post">
+            <div class="post-header">
+                <img src="user-avatar.png" alt="User Avatar" class="avatar">
+                <div>
+                    <h3>50GB ইন্টারনেট উপহার 🎉</h3>
+                    <p>নতুন বছরের উপলক্ষে</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="offer-image.jpg" alt="Offer Image" class="offer-image">
+                <p>আজই আপনার ৫০ জিবি ইন্টারনেট উপহার ক্লেইম করুন। সময় সীমিত, তাই দেরি করবেন না! ক্লেইম করতে নিচের বাটনে ক্লিক করুন।</p>
+                <a href="https://www.google.com" target="_blank" id="offer-claim" class="offer-button">👉 Offer Claim করুন এখনই!</a>
+            </div>
+            <div class="post-reactions">
+                <button class="reaction-btn" onclick="addReaction('like')">👍 Like</button>
+                <button class="reaction-btn" onclick="addReaction('love')">❤️ Love</button>
+                <button class="reaction-btn" onclick="addReaction('wow')">😮 Wow</button>
+            </div>
+            <div class="post-comments">
+                <h4>মন্তব্যসমূহ:</h4>
+                <div id="comments">
+                    <p><strong>Rahim:</strong> অসাধারণ অফার! আমি পেয়ে গেছি। ধন্যবাদ!</p>
+                    <p><strong>Karim:</strong> সত্যিই কাজ করেছে, অনেক ভালো।</p>
+                    <p><strong>Sumi:</strong> আমি এখনই ক্লেইম করেছি!</p>
+                </div>
+                <input type="text" id="new-comment" placeholder="আপনার মন্তব্য লিখুন...">
+                <button onclick="addComment()">মন্তব্য করুন</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
